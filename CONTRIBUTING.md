@@ -11,6 +11,9 @@ changes.
 Bug Reports
 -----------
 
+:warning: *For reporting security issues read the [Security](SECURITY.md)
+documentation, the security related bugs need a special handling.*
+
 If you find a problem, please report it either using
 [Bugzilla](https://bugzilla.suse.com/enter_bug.cgi?format=guided&product=openSUSE+Tumbleweed&component=YaST2)
 or [GitHub issues](../../issues). (For Bugzilla, use the [simplified
@@ -30,6 +33,9 @@ refactorings and implementation of new features. However, before making any
 non-trivial contribution, get in touch with us first — this can prevent wasted
 effort on both sides. Also, have a look at our [development
 documentation](http://en.opensuse.org/openSUSE:YaST_development).
+
+:warning: *For sending security related fixes read the [Security](
+SECURITY.md) documentation.*
 
 To send us your code change, use GitHub pull requests. The workflow is as
 follows:
