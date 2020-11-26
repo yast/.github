@@ -24,7 +24,7 @@ jobs:
       run: rpm -qa | sort
 
     - name: Package Build
-      run:  yast-travis-cpp
+      run:  yast-ci-cpp
 
   # # FIXME: add additional checks into a separate job (run in parallel)
   # #        or you can add them into the job above (run sequentially)

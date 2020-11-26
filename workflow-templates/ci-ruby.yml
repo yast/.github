@@ -57,7 +57,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Package Build
-      run: yast-travis-ruby -o package
+      run: yast-ci-ruby -o package
 
   Yardoc:
     runs-on: ubuntu-latest
@@ -84,7 +84,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Perl Syntax
-      run: yast-travis-ruby -o perl_syntax
+      run: yast-ci-ruby -o perl_syntax
 
     - name: POT Check
       run: rake check:pot
