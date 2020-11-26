@@ -1,0 +1,8 @@
+{
+    "name": "YaST CI Workflow (C++)",
+    "description": "CI template for YaST packages written mainly in C++",
+    "iconName": "pattern-c-devel",
+    "categories": [
+        "C++"
+    ]
+}

@@ -1,0 +1,42 @@
+
+# See https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  Package:
+    runs-on: ubuntu-latest
+    container: registry.opensuse.org/yast/head/containers/yast-cpp:latest
+
+    steps:
+
+    - name: Git Checkout
+      uses: actions/checkout@v1
+
+    # FIXME: optionally install the missing dependencies
+    # - name: Install Dependencies
+    #   run: zypper --non-interactive install foobar
+
+    # just for easier debugging...
+    - name: Inspect Installed Packages
+      run: rpm -qa | sort
+
+    - name: Package Build
+      run:  yast-travis-cpp
+
+  # # FIXME: add additional checks into a separate job (run in parallel)
+  # #        or you can add them into the job above (run sequentially)
+  # Checks:
+  #  runs-on: ubuntu-latest
+  #  container: registry.opensuse.org/yast/head/containers/yast-ruby:latest
+  #
+  #  steps:
+  #
+  #  - name: Git Checkout
+  #    uses: actions/checkout@v1
+  #
+  #  # FIXME: add additional checks here:
+  #  # - name: Shell Check
+  #  #   run: shellcheck ...
