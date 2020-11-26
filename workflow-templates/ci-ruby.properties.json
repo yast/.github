@@ -1,0 +1,11 @@
+{
+    "name": "YaST CI Workflow (Ruby)",
+    "description": "CI template for YaST packages written mainly in Ruby",
+    "iconName": "pattern-ruby-devel",
+    "categories": [
+        "Ruby"
+    ],
+    "filePatterns": [
+        "^Rakefile$"
+    ]
+}
