@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     # FIXME: optionally install the missing dependencies
     # - name: Install Dependencies
@@ -35,7 +35,7 @@ jobs:
   #  steps:
   #
   #  - name: Git Checkout
-  #    uses: actions/checkout@v1
+  #    uses: actions/checkout@v2
   #
   #  # FIXME: add additional checks here:
   #  # - name: Shell Check
