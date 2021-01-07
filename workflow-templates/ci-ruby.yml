@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     # FIXME: optionally install the missing dependencies
     # - name: Install Dependencies
@@ -42,7 +42,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Rubocop
       run: rake check:rubocop
@@ -54,7 +54,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Package Build
       run: yast-ci-ruby -o package
@@ -66,7 +66,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Yardoc
       # FIXME: you can just run "yardoc" if "check:doc" task is too strict...
@@ -81,7 +81,7 @@ jobs:
     steps:
 
     - name: Git Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Perl Syntax
       run: yast-ci-ruby -o perl_syntax
